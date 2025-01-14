@@ -1,0 +1,8 @@
+# Copyright (c) 2025 Nicolas Munnich
+# SPDX-License-Identifier: MIT
+
+description: Inverting Key Press behavior
+
+compatible: "zmk,behavior-inverting-key-press"
+
+include: one_param.yaml

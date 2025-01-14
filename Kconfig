@@ -1,0 +1,5 @@
+DT_COMPAT_ZMK_BEHAVIOR_INVERTING_KEY_PRESS := zmk,behavior-inverting-key-press
+
+config ZMK_BEHAVIOR_INVERTING_KEY_PRESS
+    bool
+    default $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_INVERTING_KEY_PRESS))

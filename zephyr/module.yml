@@ -1,0 +1,6 @@
+name: zmk-behavior-inverting-key-press
+build:
+  cmake: .
+  kconfig: Kconfig
+  settings:
+    dts_root: .

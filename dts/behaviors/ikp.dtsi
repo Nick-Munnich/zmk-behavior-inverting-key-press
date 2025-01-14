@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2025 Nicolas Munnich
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/behaviors.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+#if ZMK_BEHAVIOR_OMIT(INVERTING_KEY_PRESS)
+        /omit-if-no-ref/
+#endif
+        ikp: inverting_key_press {
+            compatible = "zmk,behavior-inverting-key-press";
+            #binding-cells = <1>;
+            display-name = "Inverting Key Press";
+        };
+    };
+};
